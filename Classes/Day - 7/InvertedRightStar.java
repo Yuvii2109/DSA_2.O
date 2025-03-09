@@ -27,3 +27,13 @@ public class InvertedRightStar {
         }
     }
 }
+
+/*
+    Output -
+
+    * * * * * 
+    * * * * 
+    * * * 
+    * * 
+    * 
+*/
