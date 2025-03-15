@@ -26,3 +26,13 @@ public class RightTriangle {
         sc.close();
     }
 }
+
+/*
+    Output -
+    
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
+*/
