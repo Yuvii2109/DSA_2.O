@@ -29,6 +29,23 @@ public class VerticalIsoscelesTriangle {
             j--;
             spaces2++;
         }
+        System.out.println("\nSirji Method - ");
+        int row = 1;
+        int numberOfStars = 1;
+        while(row <= 9){
+            int x = 1;
+            while(x <= numberOfStars){
+                System.out.print("* ");
+                x++;
+            }
+            if(row < 5){
+                numberOfStars++;
+            }else{
+                numberOfStars--;
+            }
+            row++;
+            System.out.println();
+        }
     }
 }
 
