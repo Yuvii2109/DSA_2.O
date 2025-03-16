@@ -9,7 +9,7 @@ public class InnerDiamondCutOutFromRectangle {
             x++;
         }
         System.out.println();
-        while(row <= 7){
+        while(row <= 5){
             int w = 1, y = 1, z = 1;
             while(w <= numberOfStars){
                 System.out.print("* ");
@@ -23,7 +23,7 @@ public class InnerDiamondCutOutFromRectangle {
                 System.out.print("* ");
                 z++;
             }
-            if(row < 4){
+            if(row < 3){
                 numberOfStars--;
                 numberOfSpaces += 2;
             }else{
@@ -39,3 +39,15 @@ public class InnerDiamondCutOutFromRectangle {
         }
     }
 }
+
+/*
+    Output -
+
+    * * * * * * * 
+    * * *   * * *
+    * *       * *
+    *           *
+    * *       * *
+    * * *   * * *
+    * * * * * * *
+*/
