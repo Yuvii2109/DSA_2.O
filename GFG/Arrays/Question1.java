@@ -7,7 +7,8 @@
 import java.util.Arrays;
 
 public class Question1 {
-    public int getSecondLargest(int[] arr) {
+    // Brute Force Approach - O(nlogn)
+    public static int getSecondLargest(int[] arr) {
         if(arr.length == 0 || arr.length == 1){
             return -1;
         }
@@ -23,5 +24,25 @@ public class Question1 {
             }
         }
         return answer;
+    }
+
+    // Optimal Approach - O(n)
+    public static int secondLargest(int[] arr){
+        int largest = -1, secondLargest = -1;
+        int n = arr.length;
+        for(int i = 0; i < n; i++){
+            if(arr[i] > largest){
+                secondLargest = largest;
+                largest = arr[i];
+            }else if(arr[i] < largest && arr[i] > secondLargest){
+                secondLargest = arr[i];
+            }
+        }
+        return secondLargest;
+    }
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 0, 4, 3, 0, 5, 0};
+        System.out.println(getSecondLargest(arr));
+        System.out.println(secondLargest(arr));
     }
 }
