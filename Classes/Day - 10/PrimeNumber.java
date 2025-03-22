@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PrimeNumber {
+public class PrimeNumber { 
     public static void main(String[] args) {
         try(Scanner sc = new Scanner(System.in)){
             System.out.print("Enter a number - ");
