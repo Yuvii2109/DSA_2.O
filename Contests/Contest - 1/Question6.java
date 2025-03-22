@@ -5,6 +5,7 @@ public class Question6 {
         try(Scanner sc = new Scanner(System.in)){
             System.out.print("Enter the number of rows - ");
             int n = sc.nextInt();
+            n = 2*n-1;
             int rows = 1;
             int centralNumber = 1;
             int numberOfSpaces = n/2;
