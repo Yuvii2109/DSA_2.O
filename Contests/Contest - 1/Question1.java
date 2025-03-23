@@ -42,3 +42,17 @@ public class Question1 {
         }
     }
 }
+
+/*
+    Output -
+
+        Enter a number - 7
+        
+        * * * * * * * 
+        * * *   * * *
+        * *       * *
+        *           *
+        * *       * *
+        * * *   * * *
+        * * * * * * * 
+*/

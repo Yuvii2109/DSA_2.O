@@ -11,17 +11,17 @@ public class Question5 {
             while(row <= n){
                 int x = 1, y = 1;
                 while(x <= numberOfSpaces){
-                    System.out.print(" ");
+                    System.out.print("  ");
                     x++;
                 }
                 while(y <= numberOfStars){
                     if(row == 1 || row == n){
-                        System.out.print("*");
+                        System.out.print("* ");
                     }else{
                         if(y == 1 || y == n){
-                            System.out.print("*");
+                            System.out.print("* ");
                         }else{
-                            System.out.print(" ");
+                            System.out.print("  ");
                         }
                     }
                     y++;
@@ -33,3 +33,15 @@ public class Question5 {
         }
     }
 }
+
+/*
+    Output -
+
+        Enter the length of the side - 5
+
+                * * * * * 
+              *       *
+            *       *
+          *       *
+        * * * * * 
+*/

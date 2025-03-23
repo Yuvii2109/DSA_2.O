@@ -9,18 +9,18 @@ public class Question10 {
             int numberOfStars = n-1;
             int numberOfSpaces = 1;
             for(int i = 1; i <= 2*n-1; i++){
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println();
             while(row <= 2*n-3){
                 for(int i = 1; i <= numberOfStars; i++){
-                    System.out.print("*");
+                    System.out.print("* ");
                 }
                 for(int j = 1; j <= numberOfSpaces; j++){
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
                 for(int k = 1; k <= numberOfStars; k++){
-                    System.out.print("*");
+                    System.out.print("* ");
                 }
                 System.out.println();
                 row++;
@@ -33,8 +33,24 @@ public class Question10 {
                 }
             }
             for(int i = 1; i <= 2*n-1; i++){
-                System.out.print("*");
+                System.out.print("* ");
             }
         }
     }
 }
+
+/*
+    Output -
+
+        Enter the number of rows - 5
+        
+        * * * * * * * * * 
+        * * * *   * * * *
+        * * *       * * *
+        * *           * *
+        *               * 
+        * *           * *
+        * * *       * * *
+        * * * *   * * * *
+        * * * * * * * * *
+*/

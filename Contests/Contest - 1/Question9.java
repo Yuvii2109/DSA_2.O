@@ -10,18 +10,18 @@ public class Question9 {
             while(row <= n){
                 int x = 1, y = 1, z = row;
                 while(x <= row){
-                    System.out.print(x + "\t");
+                    System.out.print(x + " ");
                     x++;
                 }
                 while(y <= numberOfSpaces){
-                    System.out.print(" \t");
+                    System.out.print("  ");
                     y++;
                 }
                 if(row == n){
                     z = row-1;
                 }
                 while(z >= 1){
-                    System.out.print(z + "\t");
+                    System.out.print(z + " ");
                     z--;
                 }
                 numberOfSpaces -= 2;
@@ -31,3 +31,15 @@ public class Question9 {
         }
     }
 }
+
+/*
+    Output -
+
+        Enter the number of rows - 5
+        
+        1               1 
+        1 2           2 1
+        1 2 3       3 2 1
+        1 2 3 4   4 3 2 1
+        1 2 3 4 5 4 3 2 1 
+*/

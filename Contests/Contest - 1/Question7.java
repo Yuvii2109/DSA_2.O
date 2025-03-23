@@ -10,9 +10,9 @@ public class Question7 {
             while(rows <= n){
                 for(int i = 1; i <= numberOfNumbers; i++){
                     if(i == 1 || i == numberOfNumbers){
-                        System.out.print(numberOfNumbers + "\t");
+                        System.out.print(numberOfNumbers + " ");
                     }else{
-                        System.out.print("0\t");
+                        System.out.print("0 ");
                     }
                 }
                 numberOfNumbers++;
@@ -22,3 +22,17 @@ public class Question7 {
         }
     }
 }
+
+/*
+    Output -
+
+        Enter the number of rows - 7
+        
+        1 
+        2 2 
+        3 0 3 
+        4 0 0 4 
+        5 0 0 0 5 
+        6 0 0 0 0 6 
+        7 0 0 0 0 0 7
+*/

@@ -31,3 +31,17 @@ public class Question3 {
         }
     }
 }
+
+/*
+    Output -
+
+        Enter the number of rows - 7
+        
+              * 
+            * * *
+          * * * * *
+        * * * * * * *
+          * * * * *
+            * * *
+              *
+*/
