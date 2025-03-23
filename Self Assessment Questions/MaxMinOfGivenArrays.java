@@ -37,3 +37,5 @@ public class MaxMinOfGivenArrays {
         System.out.println("Minimum of 3 arrays - " + min(arr1, arr2, arr3));
     }
 }
+
+// Misunderstood the question
