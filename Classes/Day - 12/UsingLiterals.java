@@ -10,5 +10,6 @@ public class UsingLiterals {
         System.out.println(c);
         System.out.println(d);
         System.out.println(e); 
+        // Literals - Code which represents constant values.
     }
 }
