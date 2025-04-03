@@ -8,7 +8,6 @@
 
 public class Question5 {
     void nextPermutation(int[] arr) {
-        // code here
         int k = -1;
         int n = arr.length;
         for(int i = n-2; i >= 0; i--){
