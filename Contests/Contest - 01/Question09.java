@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question9 {
+public class Question09 {
     public static void main(String args[]) {
         try(Scanner sc = new Scanner(System.in)){
             System.out.print("Enter the number of rows - ");

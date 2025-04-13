@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question5 {
+public class Question05 {
     public static void main(String args[]) {
         try(Scanner sc = new Scanner(System.in)){
             System.out.print("Enter the length of the side - ");
