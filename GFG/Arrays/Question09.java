@@ -25,7 +25,7 @@
 
 import java.util.Arrays;
 
-public class Question9 {
+public class Question09 {
     int getMinDiff(int[] arr, int k) {
         /*
             int n = arr.length;

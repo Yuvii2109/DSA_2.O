@@ -4,7 +4,7 @@
 // change in the array in place.
 // Note - Consider the array as circular.
 
-public class Question4{
+public class Question04{
     // Function to rotate an array by d elements in counter-clockwise direction.
     static void rotateArr(int arr[], int d) {
         // Ek tareeka toh hogya ki hum bna len ek or temporary array and 

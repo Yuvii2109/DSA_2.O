@@ -18,7 +18,7 @@
 // Output - 10 
 // Explanation - Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].
 
-public class Question8 {
+public class Question08 {
     public int maximumProfit(int prices[]) {
         // Code here
         int minPrice = Integer.MAX_VALUE;

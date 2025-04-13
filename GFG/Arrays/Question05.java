@@ -6,7 +6,7 @@
 // sorted in ascending order). 
 // Note - A permutation of an array of integers refers to a specific arrangement of its elements in a sequence or linear order.
 
-public class Question5 {
+public class Question05 {
     void nextPermutation(int[] arr) {
         int k = -1;
         int n = arr.length;

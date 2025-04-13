@@ -14,7 +14,7 @@
 // Output - 2
 // Explanation - Buy the stock on day 3 and sell it on day 4 => 4 – 2 = 2. Maximum Profit = 2.
 
-public class Question7 {
+public class Question07 {
     public int maximumProfit(int prices[]) {
         int n = prices.length;
         int localMinima = prices[0];

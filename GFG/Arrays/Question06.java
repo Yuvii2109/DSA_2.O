@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Question6 {
+public class Question06 {
     public List<Integer> findMajority(int[] nums) {
         List<Integer> result = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<>();

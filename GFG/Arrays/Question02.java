@@ -4,7 +4,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Question2 {
+public class Question02 {
     public static int[] pushZerosToEnd(int[] arr) {
         // code here
         int nums[] = new int[arr.length];

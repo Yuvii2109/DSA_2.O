@@ -6,7 +6,7 @@
 
 import java.util.Arrays;
 
-public class Question1 {
+public class Question01 {
     // Brute Force Approach - O(nlogn)
     public static int getSecondLargest(int[] arr) {
         if(arr.length == 0 || arr.length == 1){

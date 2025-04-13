@@ -1,6 +1,6 @@
 // Code to reverse an array.
 
-public class Question3 {
+public class Question03 {
     public static void reverseArray(int arr[]) {
         // code here
         int i = 0, j = arr.length-1;
