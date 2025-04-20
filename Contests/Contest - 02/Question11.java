@@ -45,7 +45,7 @@ public class Question11 {
                 placevalue *= 10;
                 temp /= 10;
             }
-            System.out.println(n + " gets inverted to - " +inverted);
+            System.out.println(n + " gets inverted to - " + inverted);
         }
     }
 }
