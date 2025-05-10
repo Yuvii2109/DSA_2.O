@@ -7,7 +7,7 @@ public class CheckIfPairExistWhoseSumIsTarget {
         while (left <= right){
             int sum = arr[left] + arr[right];
             if (sum == target) {
-                return true;
+                return true; 
             }else if (sum < target){
                 left++;
             }else{
