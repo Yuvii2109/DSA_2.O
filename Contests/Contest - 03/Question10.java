@@ -36,12 +36,14 @@ public class Question10 {
     }
     public static void main (String args[]) {
         try(Scanner sc = new Scanner(System.in)){
+            System.out.print("Enter array length - ");
             int n = sc.nextInt();
             int arr[] = new int[n];
             for(int i = 0; i < n; i++){
                 arr[i] = sc.nextInt();
             }
             long result[] = productExceptSelf(arr);
+            System.out.print("Product array - ");
             for(int i = 0; i < result.length; i++){
                 System.out.print(result[i] + " ");
             }
