@@ -19,8 +19,8 @@ public class SumOfArray {
     }
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5};
-        // int index = arr.length - 1;
-        int result = arraySum1(arr);
+        int index = arr.length - 1;
+        int result = arraySum2(arr, index);
         System.out.println("Sum of array is - " + result);
     }
 }
