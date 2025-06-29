@@ -7,13 +7,13 @@ public class EfficientWorkers {
             return -1;
         }
         Arrays.sort(arr);
-        int prefix[] = new int[n + 1];
-        int suffix[] = new int[n + 1];
+        int prefixCost[] = new int[n + 1];
+        int suffixCost[] = new int[n + 1];
         for(int i = 2; i <= n; i += 2){
-            prefix[i] = prefix[i - 2] + (arr[i - 1] + arr[i - 2]);
+            prefixCost[i] = prefixCost[i - 2] + (arr[i - 1] + arr[i - 2]);
         }
         for(int i = n - 2; i >= 0; i -= 2){
-            suffix[i] = suffix[i + 2] + (arr[i + 1] + arr[i]);
+            suffixCost[i] = suffixCost[i + 2] + (arr[i + 1] + arr[i]);
         }
         for(int i = 0; i < n; i++){
             
