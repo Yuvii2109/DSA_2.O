@@ -7,7 +7,21 @@ public class PowerRecursion {
         }else if(power == 1){
             return base;
         }
-        return base * power(base, power - 1);
+        int smallProblem = power(base, power - 1);
+        int bigProblem = base * smallProblem;
+        return bigProblem;
+    }
+    public static int optimisePower(int base, int power){
+        if(power == 0){
+            return 1;
+        }else if(power == 1){
+            return base;
+        }
+        int halfPowerSquare = optimisePower(base, power/2) * optimisePower(base, power/2);
+        if(power % 2 != 0){
+            halfPowerSquare *= base;
+        }
+        return halfPowerSquare;
     }
     public static void main(String[] args) {
         try(Scanner sc = new Scanner(System.in)){
@@ -15,7 +29,7 @@ public class PowerRecursion {
             int a = sc.nextInt();
             System.out.print("Enter b - ");
             int b = sc.nextInt();
-            int result = power(a, b);
+            int result = optimisePower(a, b);
             System.out.println(a + " to the power of " + b + " is - " + result);
         }
     }
