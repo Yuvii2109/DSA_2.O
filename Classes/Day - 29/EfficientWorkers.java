@@ -3,9 +3,6 @@ import java.util.Arrays;
 public class EfficientWorkers {
     public static int findMinCost(int[] arr){
         int n = arr.length;
-        if(n % 2 == 0){
-            return -1;
-        }
         Arrays.sort(arr);
         int prefixCost[] = new int[n + 1];
         int suffixCost[] = new int[n + 1];
