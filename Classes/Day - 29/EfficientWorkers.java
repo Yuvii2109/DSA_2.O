@@ -5,13 +5,13 @@ public class EfficientWorkers {
         int n = arr.length;
         Arrays.sort(arr);
 
-        // 1) Build prefixEven - optimal pairing cost on [0..i-1], pairing (0,1),(2,3),...
+        // 1) Build prefixEven - optimal pairing cost on [0..i-1], pairing (0,1), (2,3),...
         int[] prefixEven = new int[n + 1];
         for(int i = 2; i <= n; i += 2){
             prefixEven[i] = prefixEven[i - 2] + (arr[i - 1] - arr[i - 2]);
         }
 
-        // 2) Build suffixEven - optimal pairing cost on [i..n-1] pairing (i, i + 1),(i + 2, i + 3),...
+        // 2) Build suffixEven - optimal pairing cost on [i..n-1] pairing (i, i + 1), (i + 2, i + 3),...
         int[] suffixEven = new int[n + 1];  // So we can safely index i + 2 up to n + 1
         for(int i = n - 2; i >= 0; i--){
             suffixEven[i] = suffixEven[i + 2] + (arr[i + 1] - arr[i]);
