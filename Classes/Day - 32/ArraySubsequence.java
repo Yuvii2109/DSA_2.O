@@ -8,7 +8,7 @@ public class ArraySubsequence {
         }
         res.add(arr[index]); // Including current index
         printSubsequences(arr, index + 1, res);
-        res.remove(res.size() - 1); // Not Including - Backtrack (removing last added value to undo the inclusion)
+        res.remove(res.size() - 1); // Not Including - removing last added value to undo the inclusion
         printSubsequences(arr, index + 1, res);
     }
     public static void main(String[] args) {
