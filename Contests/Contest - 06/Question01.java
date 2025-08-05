@@ -43,4 +43,4 @@ public class Question01 {
             printOddEven(n);
         }
     }
-}
+} 
