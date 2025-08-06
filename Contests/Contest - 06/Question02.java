@@ -5,7 +5,7 @@
     Constraints - 1 <= N <= 100
     Output Format - Print the output as a single integer which is the nth triangle.
     Sample Input - 3
-    Sample Output - 6
+    Sample Output - 6 
 */
 
 import java.util.Scanner;
