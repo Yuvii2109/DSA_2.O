@@ -50,7 +50,7 @@ public class CyclicLinkedListII {
         }
         if(hasCycle){
             ListNode pointer1 = head; // pointer1 starts from head
-            ListNode pointer2 = slow; // // pointer2 starts from the meeting point
+            ListNode pointer2 = slow; // pointer2 starts from the meeting point
             while(pointer1 != pointer2){
                 pointer1 = pointer1.next;
                 pointer2 = pointer2.next;
