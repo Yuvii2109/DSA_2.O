@@ -17,14 +17,18 @@
 */
 
 class ListNode {
+    @SuppressWarnings("unused")
     int val;
     ListNode next;
+    @SuppressWarnings("unused")
     ListNode() {}
+    @SuppressWarnings("unused")
     ListNode(int val) { this.val = val; }
+    @SuppressWarnings("unused")
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-public class MiddleOfLinkedList {
+public class MiddleOfLinkedList {    
     public ListNode middleNode(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;

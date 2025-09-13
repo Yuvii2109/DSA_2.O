@@ -6,7 +6,7 @@ class A {
 }
 
 class B extends A {
-    int d = 12;
+    @Override
     void fun(){
         System.out.println("Fun From B");
     }
