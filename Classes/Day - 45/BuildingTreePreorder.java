@@ -54,6 +54,14 @@ public class BuildingTreePreorder {
         int rightCount = CountNode(root.right);
         return leftCount + rightCount + 1;
     }
+    public static int sumNodes(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int leftSum = sumNodes(root.left);
+        int rightSum = sumNodes(root.right);
+        return leftSum + rightSum + root.data;
+    }
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, 6, -1, -1, 7, -1, -1};
         TreeNode root = buildTree(nodes);
@@ -67,5 +75,7 @@ public class BuildingTreePreorder {
         postOrder(root);
         System.out.println();
         System.out.println("\nCount of nodes in the tree - " + CountNode(root) + "\n");
+        System.out.println();
+        System.out.println("Sum of all nodes in the tree - " + sumNodes(root) + "\n");
     }
 }
