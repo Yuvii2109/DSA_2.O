@@ -28,6 +28,6 @@ public class NumberOfPaths {
     }
     public static void main(String args[]){
         int m = 3, n = 3;
-        System.out.println(bestSol(m, n));
+        System.out.println(numberOfPaths(m, n));
     }
 }
