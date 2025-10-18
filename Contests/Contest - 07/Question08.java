@@ -68,10 +68,10 @@ public class Question08 {
         }
 
         // Combine odd and even lists
-        if (oddTail != null) {
+        if(oddTail != null){
             oddTail.next = evenHead;
         }
-        if (evenTail != null) {
+        if(evenTail != null){
             evenTail.next = null; // End the list
         }
 
