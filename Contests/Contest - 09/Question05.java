@@ -26,16 +26,21 @@ import java.util.Scanner;
 
 public class Question05 {
     private static void coinChangeWays(int N, int T, int[] arr){
+        long[][] dp = new long[N + 1][T + 1];
         int mod = 1000000007;
-        long[] dp = new long[T + 1];
-        dp[0] = 1;
-
-        for(int i = 0; i < N; i++){
-            for(int j = arr[i]; j <= T; j++){
-                dp[j] = (dp[j] + dp[j - arr[i]]) % mod;
+        for(int i = 0; i <= N; i++){
+            dp[i][0] = 1;
+        }
+        for(int i = 1; i <= N; i++){
+            for(int j = 1; j <= T; j++){
+                if(arr[i - 1] <= j){
+                    dp[i][j] = (dp[i - 1][j] + dp[i][j - arr[i - 1]]) % mod;
+                }else{
+                    dp[i][j] = dp[i - 1][j] % mod;
+                }
             }
         }
-        System.out.println(dp[T]);
+        System.out.println(dp[N][T] % mod);
     }
     public static void main(String[] args) {
         try(Scanner sc = new Scanner(System.in)){
