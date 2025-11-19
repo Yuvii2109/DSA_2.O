@@ -23,20 +23,19 @@ import java.util.Scanner;
 
 public class Question12 {
     private static void lengthOfSmallestInterval(int n, Scanner sc){
-        int maxStart = Integer.MIN_VALUE;
-        int minEnd = Integer.MAX_VALUE;
+        long maxL = Long.MIN_VALUE;
+        long minR = Long.MAX_VALUE;
+
         for(int i = 0; i < n; i++){
-            int l = sc.nextInt();
-            int r = sc.nextInt();
-            if(l > maxStart){
-                maxStart = l;
-            }
-            if(r < minEnd){
-                minEnd = r;
-            }
+            long l = sc.nextLong();
+            long r = sc.nextLong();
+            if(l > maxL) maxL = l;
+            if(r < minR) minR = r;
         }
-        int length = (minEnd - maxStart + 1) + 2;
-        System.out.println(length);
+
+        long s = maxL - minR + 3;
+        if(s < 2) s = 2;
+        System.out.println(s);
     }
     public static void main(String[] args) {
         try(Scanner sc = new Scanner(System.in)){
